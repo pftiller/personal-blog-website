@@ -1,0 +1,66 @@
+main {
+    grid-area: mn;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 175px;
+    grid-template-areas:
+        "crd"
+        "asd";
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    grid-area: crd;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: solid 3px #444;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    padding-right: 15px;
+}
+
+aside {
+    grid-area: asd;
+    padding-right: 35px
+}
+
+.thumbnail {
+    width: 275px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+@media(min-width:800px) {
+    main {
+        grid-template-columns: 70% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            "crd asd";
+        gap: 2.5%;
+        padding: 15px;
+    }
+
+    #container {
+        grid-template-rows: 150px 600px 100px;
+    }
+}

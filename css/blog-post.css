@@ -1,0 +1,44 @@
+main {
+    grid-template-areas:
+        "art";
+    padding: 15px;
+}
+
+article {
+    grid-area: art;
+    padding: 0 15px;
+}
+
+.main-image {
+    width: 550px;
+    height: 366px;
+    background-image: url('../img/clouds.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+#avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url('../img/me.png');
+    display: inline-block;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+small {
+    font-style: italic;
+}
+
+@media(min-width:800px) {
+    #container {
+        grid-template-rows: 150px 1050px 100px;
+    }
+}
