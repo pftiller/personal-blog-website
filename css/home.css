@@ -28,7 +28,7 @@ aside {
 }
 
 .thumbnail {
-    width: 275px;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     margin-top: 15px;
@@ -61,6 +61,6 @@ button:hover {
     }
 
     #container {
-        grid-template-rows: 150px 600px 100px;
+        grid-template-rows: 150px 635px 125px;
     }
 }

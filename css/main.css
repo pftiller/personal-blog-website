@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 
 html {
     background-color: #ccc;
@@ -57,6 +59,7 @@ nav a:visited {
 }
 
 h2 {
+    font-family: Lato, sans-serif;
     margin-bottom: 0;
 }
 
@@ -76,6 +79,7 @@ time {
 
 time {
     display: block;
+    font-family: font-awesome;
 }
 
 .blog-title:hover {
@@ -88,7 +92,25 @@ footer {
     padding: 15px;
     background-color: #eee;
 }
-
+#social-icons {
+    display:flex;
+    width: 35%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:34px;
+    font-family: FontAwesome;
+    margin: 10px auto 25px;
+}
+#social-icons a {
+    text-decoration: none;
+    color: #000;
+}
+#social-icons i {
+    font-style: normal;
+}
+#site-design {
+    font-style: italic;
+}
 @media(min-width:800px) {
     body {
         max-width: 1000px;
